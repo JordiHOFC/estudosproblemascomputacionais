@@ -66,3 +66,6 @@ HEURISTICA:
             -aleatoria: sortear valores verdadeiro ou falso para cada item da solucao.
     refinamento: utilizar uma técncica sobre uma solucao já existente buscando melhorar a mesma.
 
+
+
+como executar: javac Solucao.java && java Solucao < instancias/low-dimensional/f1_l-d_kp_10_269
