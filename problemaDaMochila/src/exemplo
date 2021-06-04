@@ -1,0 +1,37 @@
+PROBLEMA DA MOCHILA
+quantidade de itens: 10
+peso da mochila: 5
+
+item peso valor
+0     2    3
+1     2    3
+2     2    3
+3     2    3
+4     2    3
+5     2    3
+6     2    3
+7     2    3
+8     2    3
+9     2    3
+
+
+vetor :      0|1|2|3|4|5|6|7|8|9
+    ->:      t|f|t|f|f|t|f|t|t|f
+    quais itens: 0,2,5,7,8
+    valor: 15
+    peso: 10>5 -> má solucao ou solucao invalida
+
+
+vetor :      0|1|2|3|4|5|6|7|8|9
+    ->:      t|f|t|f|f|f|f|f|f|f|
+    quais itens: 0,2,5,7,8
+    valor: 4
+    peso: 4<5 -> boa solucao
+
+
+HEURISTICA:
+    construtivas: tecnicas que visao criar uma solucao para o problema proposto.
+            -gulosa: utilizar alguma caracteristica do problema, por exemplo: inserir os itens de menor peso ou de maior valor.
+            -aleatoria: sortear valores verdadeiro ou falso para cada item da solucao.
+    refinamento: utilizar uma técncica sobre uma solucao já existente buscando melhorar a mesma.
+
