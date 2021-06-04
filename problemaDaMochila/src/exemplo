@@ -1,8 +1,8 @@
 PROBLEMA DA MOCHILA
 quantidade de itens: 10
-peso da mochila: 5
+peso da mochila: 269
 
-item peso valor
+item valor peso
 0     55   95
 1     10   4
 2     47   60
@@ -17,16 +17,47 @@ item peso valor
 
 vetor :      0|1|2|3|4|5|6|7|8|9
     ->:      t|f|t|f|f|t|f|t|t|f
+
+funcao de avaliacao
+
+
+vetor :      00|01|02|03|04|05|06|07|08|09
+valor :      55|10|47|05|04|50|08|61|85|87
+peso :       95|04|60|32|23|72|80|62|65|46
+    ->:      t | f| t| f| f| t| f| t| t| f
     quais itens: 0,2,5,7,8
-    valor: 15
+    fo: 55+47+50+61+85=298
+    peso da mochila(pm): 354
+    capacidade(C):269
+ Como avaliar  quando trabalhar com solucao invalidas?
+  valor da mochila (tv)
+  peso da mochila (pm)
+  quantidade de peso extrapolado (e)= (pm - capacidade)
+  porcentagem de peso extrapolado (pe)=e/capacidade
+
+  caso o peso da mochila seja maior que a capacidade, subtraimos do valor da mochila a porcetagem de peso que a mesma extrapolou
+
+     fA =tv - (pe *tv)
+     peso acima da capacidade (e)=(pm -C)
+
+     tv=298
+     pm=354
+     e=85
+     pe=85/269-> 0,3159
+     fa=  298-(298*0,3159) ->   298-94,1382 ->  203,83
+
+
+
+
+
+    pe= e/c
+
+
+
+
     peso: 10>5 -> má solucao ou solucao invalida
 
 
-vetor :      0|1|2|3|4|5|6|7|8|9
-    ->:      t|f|t|f|f|f|f|f|f|f|
-    quais itens: 0,2,5,7,8
-    valor: 4
-    peso: 4<5 -> boa solucao
 
 
 HEURISTICA:
